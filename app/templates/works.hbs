@@ -1,0 +1,10 @@
+<!-- app/templates/bands.hbs -->
+<div class="row">
+    <div class="row list-wrapper">
+        <ul class="list-group">
+          {{#each model as |work|}}
+            <li class="list-group-item">{{work.name}}</li>
+        {{/each}}
+        </ul>
+    </div>
+</div>

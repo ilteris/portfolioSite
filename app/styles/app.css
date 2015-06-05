@@ -1,0 +1,227 @@
+@import url("/public/assets/fonts/AvenirNext-Regular/AvenirNext-Regular.css");
+@import url("/public/assets/fonts/AvenirNext-DemiBold/AvenirNext-DemiBold.css");
+@import url("/public/assets/fonts/AvenirNext-UltraLight/AvenirNext-UltraLight.css");
+@import url("reset.css");
+
+
+html,body {
+  background-color: #ffffff;
+  color:#444;
+  font-family:"AvenirNext-Regular", arial, sans-serif;
+  padding-top:30px;
+}
+
+*,::before,::after { box-sizing:border-box; }
+:focus { outline:none; }
+
+h1 {
+  font-family:"AvenirNext-DemiBold", arial, sans-serif;
+  font-size:3em;
+  color: #50e3c2;
+  letter-spacing: .1em;
+
+  line-height:2em;
+}
+
+
+h2 {
+  font-family:"AvenirNext-DemiBold", arial, sans-serif;
+  font-size:1.5em;
+  color: #50e3c2;
+  letter-spacing: .1em;
+
+  line-height:2em;
+}
+h2 span.year {
+  font-family:"AvenirNext-UltraLight", arial, sans-serif;
+  color: #000000;
+}
+
+
+p {
+  font-family:"AvenirNext-UltraLight", arial, sans-serif;
+  font-size:.9em;
+  line-height:1.5em;
+  letter-spacing: .05em;
+
+  margin:0 0 1.3em;
+}
+a { transition:all 150ms ease; }
+
+nav {
+  display: block;
+  position:fixed;
+  z-index:5;
+  background-color: black;
+  height: 60px;
+  top:0;
+  width:100%;
+
+}
+
+nav ul {
+  left: 18%;
+  position: absolute;
+  padding-top: 25px;
+  overflow: hidden;
+  min-width: 900px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+
+nav ul li {
+  color:#50E3C2;
+  letter-spacing: 2px;
+  font-size:1.0em;
+  padding-right: 75px;
+  padding-left: 30px;
+  text-decoration:none;
+
+}
+
+
+nav ul li a:link,
+nav ul li a:visited {
+  color:#f5f5f5;
+  letter-spacing: 2px;
+  font-size:1.0em;
+  text-decoration:none;
+
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color:#50E3C2;
+}
+
+.content {
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+
+.left {
+  float: left;
+  left: 0;
+}
+
+.left .logos {
+  float: left;
+  width: 250px;
+
+}
+
+.right {
+
+  padding-top: 100px;
+  padding-left: 300px;
+  min-width: 900px;
+  opacity: 1;
+
+}
+
+.about {
+  width: 90%;
+  padding-top: 100px;
+  padding-left: 300px;
+  min-width: 800px;
+  opacity: 1;
+}
+
+.line {
+  float: right;
+  width: 1px;
+  height: auto;
+  background: #000;
+}
+
+.left ul {
+  padding-top: 400px;
+}
+
+
+
+
+.left ul li {
+  list-style-type: none;
+  height: 350px;
+  margin: auto;
+}
+
+.left ul li .circle {
+  background-color: #fff;
+  border: 3px solid #000000;
+  border-radius: 18px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin:0 auto;
+
+}
+
+.left ul li .circleImg {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  left: -10px;
+
+}
+
+
+.logoCircle {
+}
+
+
+img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.works {
+  padding-top: 100px;
+
+}
+
+.works li {
+  height: 350px;
+
+
+}
+
+.works li img  {
+
+}
+
+.works li .workContent  {
+  width:800px;
+}
+
+
+.works li .workContent title  {
+
+
+}
+
+.works li .workContent p {
+
+
+}
+
+.works li .workImage {
+  float:left;
+  width: 370px;
+
+}
+
+.works li .workImage img.image {
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+
+}
