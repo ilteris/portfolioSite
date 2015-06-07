@@ -1,10 +1,53 @@
-<!-- app/templates/bands.hbs -->
-<div class="row">
-    <div class="row list-wrapper">
-        <ul class="list-group">
+<!-- app/templates/works.hbs -->
+<div class="content">
+    <div class="left">
+        <div class="logos">
+            <div class="line">
+            <ul>
+              {{#each model as |work|}}
+
+                      <li>
+                          <div class="logoImage"> {{#link-to 'work' work}} <img class="logo" src={{work.logo}}>{{/link-to}}</div>
+                          <img class="circleImg" src="assets/images/circle.png"/>
+
+                      </li>
+
+              {{/each}}
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right">
+        <div>
+            <h1>SELECTED PROJECTS</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium.
+                Lorem
+                ipsum
+                dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Lorem ipsum
+                dolor
+                sit
+                amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. </p>
+        </div>
+        <div class="works">
+        <ul>
           {{#each model as |work|}}
-            <li class="list-group-item">{{work.name}}</li>
-        {{/each}}
+
+                  <li>
+                      <div class="workImage">
+                          <img class="image" src={{work.image}}>
+                      </div>
+                      <div class="workContent">
+                          <h2>{{work.name}} <span class="year">{{work.year}}</span></h2>
+
+                          <p>{{work.description}}</p>
+                      </div>
+                  </li>
+
+          {{/each}}
         </ul>
+        </div>
     </div>
 </div>
