@@ -117,6 +117,8 @@ nav ul li a:active {
 
 
 .logos li .logoImage {
+  position: absolute;
+  right:0;
 
 }
 
@@ -157,6 +159,7 @@ nav ul li a:active {
   list-style-type: none;
   margin: auto;
   height: 350px;
+  position: relative;
 }
 
 .left .line ul li {
