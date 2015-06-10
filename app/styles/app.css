@@ -118,6 +118,8 @@ nav ul li a:active {
 
 .logos li .logoImage {
   position: absolute;
+  text-align: center;
+  width:250px;
   right:0;
 
 }
