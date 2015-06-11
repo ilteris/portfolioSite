@@ -8,17 +8,7 @@ export default function() {
   this.transition(
     this.fromRoute('works'),
     this.toRoute('work'),
-    this.use('explode', {
-      matchBy: 'data-speaker-id',
-      use: ['webFlyTo', { duration } ]
-    }, {
-      use: ['toLeft', { duration } ]
-    }),
-    this.reverse('explode', {
-      matchBy: 'data-speaker-id',
-      use: ['webFlyTo', { duration } ]
-    }, {
-      use: ['toRight', { duration } ]
-    })
+    this.use('toLeft')
+
   );
 }

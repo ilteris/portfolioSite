@@ -4,17 +4,15 @@
         <div class="logos">
 
 
+            <div class="line">
                 <ul>
-
-              {{#each model as |work|}}
-        <li><div class="logoImage"> {{#link-to 'work' work}} <img class="logo"  src={{work.logo}}>{{/link-to}}</div></li>
+    {{#each model as |work|}}
+        <li><div class="logoImage"> {{#link-to 'work' work}} <img class="logo"  src={{work.logo}}>{{/link-to}}</div><img class="circleImg" src="assets/images/circle.png"/></li>
 
                   {{/each}}
-
                 </ul>
             </div>
-
-
+        </div>
     </div>
     <div class="right">
         <div>

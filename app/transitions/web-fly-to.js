@@ -13,7 +13,6 @@ export default function webFlyTo(opts={}) {
   var newOffset = this.newElement.offset();
 
   var initialState = {
-    transform: 'translateX(0px) translateY(0px)',
     width: this.oldElement.width() + 'px',
     height: this.oldElement.height() + 'px'
   };
@@ -30,7 +29,7 @@ export default function webFlyTo(opts={}) {
       initialState,
       finalState
     ], {
-      duration: opts.duration || 500,
+      duration: opts.duration || 1500,
     });
     animationRunner.onfinish = () => {
       this.oldElement.css({ visibility: 'hidden' });
