@@ -8,7 +8,8 @@ export default function() {
   this.transition(
     this.fromRoute('works'),
     this.toRoute('work'),
-    this.use('toLeft')
+    this.use('toLeft'),
+    this.reverse('toRight')
 
   );
 }

@@ -73,7 +73,7 @@ var oneworld = Work.create({
   year: '2011',
   description:'Lorem Ipsum TSE',
   image:'assets/images/oneworld_ipad.png',
-  logo:'assets/images/%7Boneworld%7D_logo.png'
+  logo:'assets/images/oneworld_logo.png'
 });
 
 
