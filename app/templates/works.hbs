@@ -1,42 +1,30 @@
 <!-- app/templates/works.hbs -->
-
 <div class="content">
-    <div class="left">
-        <div class="logos">
+    <section class="left">
+        <div class="intro">
+            <h1>SELECTED PROJECTS</h1>
 
+            <p class="introtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu
+                pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu
+                pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu
+                pretium.</p>
+        </div>
+        <div id="logosGrid">
+            <div>
+              {{#liquid-with model as currentModel}}
+                {{#each model as |work|}}
 
-            <div class="line">
-                <ul>
-    {{#each model as |work|}}
-        <li><div class="logoImage"> {{#link-to 'work' work}} <img class="logo"  src={{work.logo}}>{{/link-to}}</div><img class="circleImg" src="assets/images/circle.png"/></li>
-
-                  {{/each}}
-                </ul>
+                    <button class="logo" {{action "higher" currentModel}}><img class="image" src={{work.logo}}></button>
+                {{/each}}
+              {{/liquid-with}}
             </div>
         </div>
-    </div>
+
+    </section>
+
     <div class="right">
-        <div>
-            <h1>SELECTED PROJECTS</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. </p></div>
-        <div class="works">
-        {{#liquid-with model as |currentModel|}}
-            <ul>
-              {{#each model as |work|}}
-                  <li>
-                      <div class="workImage">
-                          <img class="image" src={{work.image}}>
-                      </div>
-                      <div class="workContent" data-speaker-id={{work.name}}>
-                          <h2>{{work.name}} <span class="year">{{work.year}}</span></h2>
-                          <p>{{work.description}}</p>
-                      </div>
-                  </li>
-              {{/each}}
-            </ul>
-        {{/liquid-with}}
-        </div>
+
     </div>
+
+
 </div>

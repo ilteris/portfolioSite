@@ -12,6 +12,8 @@ if (app.env === 'production') {
   });
 }
 
+app.import('vendor/retina.js');
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //

@@ -42,10 +42,10 @@ var minibook = Work.create({
 
 var wemontage = Work.create({
   name: 'WEMONTAGE',
-  year: '2013',
+  year: '2012',
   description:'Lorem Ipsum TSE',
-  image:'assets/images/wemontage_logo.png',
-  logo:'assets/images/wemontage_mac.png'
+  image:'assets/images/wemontage_mac.png',
+  logo:'assets/images/wemontage_logo.png'
 });
 
 
@@ -64,7 +64,7 @@ var smc = Work.create({
   year: '2012',
   description:'Lorem Ipsum TSE',
   image:'assets/images/smc_iphone.png',
-  logo:'assets/images/SEEING_logo.png'
+  logo:'assets/images/smc_logo.png'
 });
 
 
@@ -78,7 +78,7 @@ var oneworld = Work.create({
 
 
 var redfish = Work.create({
-  name: 'SEEING MORE COLORS',
+  name: 'REDFISH GAMES',
   year: '2010',
   description:'Lorem Ipsum TSE',
   image:'assets/images/redfish_ipad.png',
@@ -126,7 +126,7 @@ var WorksCollection = Ember.ArrayProxy.extend(Ember.SortableMixin, {
 
 var works = WorksCollection.create();
 
-works.pushObjects([poetics, tse, minibook, sferra, oneworld, smc, redfish, remy, moet, whotels]);
+works.pushObjects([poetics, tse, minibook, sferra, oneworld, smc, redfish, wemontage, remy, moet, whotels]);
 
 
 export default Ember.Route.extend({
