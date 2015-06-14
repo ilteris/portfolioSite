@@ -23,7 +23,7 @@ html,body {
 
 
 h2 {
-  font-family:"AvenirNext-DemiBold", arial, sans-serif;
+  font-family:"AvenirNext-UltraLight", arial, sans-serif;
   font-size:1.5em;
   color: #50e3c2;
   letter-spacing: .1em;
@@ -68,6 +68,7 @@ nav ul li {
 
 
 nav ul li {
+  font-family:"AvenirNext-UltraLight", arial, sans-serif;
   color:#50E3C2;
   letter-spacing: 2px;
   font-size:1.0em;
@@ -96,7 +97,7 @@ nav ul li a:active {
 .content {
   width: 100%;
   height: 100%;
-  top: 0;
+  padding-top:50px;
   left: 0;
 }
 
@@ -107,15 +108,16 @@ h1 {
   font-size:34px;
   color: #50e3c2;
   letter-spacing: .1em;
-  line-height:2em;
+  padding-bottom:15px;
+
+
 }
 
 
 
 .left {
-  width: 550px;
+  width: 500px;
   padding-left:25px;
-  padding-top:30px;
   float: left;
 
 }
@@ -130,7 +132,7 @@ h1 {
 }
 
 #logosGrid {
-  width: 440px;
+  width: 450px;
 
 }
 
@@ -138,7 +140,11 @@ h1 {
 
 #logosGrid div button { text-align: center; margin-right:40px; margin-bottom:40px;padding:0; }
 
-
+.logosGridImage {
+  margin-top: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
 
 
 .logos li .logoImage {
@@ -152,11 +158,7 @@ h1 {
 
 
 .right {
-
-  padding-top: 100px;
-  padding-left: 300px;
-  min-width: 900px;
-  opacity: 1;
+  margin-left: 300px;
 
 }
 

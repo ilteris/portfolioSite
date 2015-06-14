@@ -13,8 +13,7 @@
             <div>
               {{#liquid-with model as currentModel}}
                 {{#each model as |work|}}
-
-                    <button class="logo" {{action "higher" currentModel}}><img class="image" src={{work.logo}}></button>
+                    <button {{action "loadRight" currentModel}} class="logo"><img class="image" src={{work.logo}}></button>
                 {{/each}}
               {{/liquid-with}}
             </div>
@@ -22,9 +21,18 @@
 
     </section>
 
+
     <div class="right">
+  {{#liquid-with model as currentModel}}
+      <div class="workImage">
+          <img class="image" src={{firstElement.image}}>
+      </div>
+      <div class="workContent">
+          <h2>MINIBOOK <span class="year">{{firstElement.year}}</span></h2>
 
+          <p>{{firstElement.description}}</p>
+      </div>
+
+  {{/liquid-with}}
     </div>
-
-
 </div>
