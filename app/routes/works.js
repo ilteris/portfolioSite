@@ -115,7 +115,7 @@ var whotels = Work.create({
   name: 'W HOTELS HOBOKEN',
   year: '2006',
   description:'Lorem Ipsum TSE',
-  image:'assets/images/w_mac.png',
+  image:'assets/images/whotels_mac.png',
   logo:'assets/images/whotels_logo.png'
 });
 

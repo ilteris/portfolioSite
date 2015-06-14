@@ -1,10 +1,11 @@
 {{#liquid-with model as currentModel use="crossFade"}}
-
+<div class="workContent">
   <div class="workImage">
       <img class="image" src={{currentModel.image}}>
   </div>
-  <div class="workContent">
+  <div class="title">
       <h2>{{currentModel.name}} <span class="year">{{currentModel.year}}</span></h2>
       <p>{{currentModel.description}}</p>
   </div>
+</div>
 {{/liquid-with}}
