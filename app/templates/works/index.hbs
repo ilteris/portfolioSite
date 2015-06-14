@@ -1,9 +1,9 @@
-{{#liquid-with model as currentModel  use="rotateBelow"}}
+{{#liquid-with model as currentModel}}
     <div class="workImage">
-        <img class="image" src={{currentElement.image}}>
+        <img class="image" src={{currentModel.image}}>
     </div>
     <div class="workContent">
-        <h2>{{currentElement.name}} <span class="year">{{currentElement.year}}</span></h2>
-        <p>{{currentElement.description}}</p>
+        <h2>{{currentModel.name}} <span class="year">{{currentModel.year}}</span></h2>
+        <p>{{currentModel.description}}</p>
     </div>
 {{/liquid-with}}
