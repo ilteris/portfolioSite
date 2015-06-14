@@ -11,16 +11,14 @@
         </div>
         <div id="logosGrid">
             <div>
-              {{#liquid-with model as currentModel}}
+              {{#liquid-with model as |currentModel|}}
                 {{#each model as |work|}}
-                    <button {{action "loadRight" currentModel}} class="logo"><img class="image" src={{work.logo}}></button>
+                    <button {{action "loadRight" work}} class="logo"><img class="image" src={{work.logo}}></button>
                 {{/each}}
               {{/liquid-with}}
             </div>
         </div>
-
     </section>
-
 
     <div class="right">
   {{#liquid-with model as currentModel}}

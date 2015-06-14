@@ -6,12 +6,7 @@ var Work = Ember.Object.extend({
   description:'',
   image:'',
   logo:'',
-
-  work_id: function() {
-    return this.get('name').dasherize();
-  }.property('name'),
-
-
+  id:''
 });
 
 var minibook = Work.create({
