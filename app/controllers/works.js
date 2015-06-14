@@ -2,15 +2,20 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
-  firstElement: function () {
-    return this.get('model.firstObject'); // or this.get('model.firstObject');
+
+  currentElement: function () {
+    //get the currentElement from actions
+   // and return here when it's called
+    //and by default return the first object
+
+    return this.get('model.firstObject');
   }.property('model.[]'),
 
   actions: {
-    loadRight: function(model){
-      console.log(this.get('model'));
-      //this.transitionToRoute('works.work', model.get('work_id')+1);
-    }
-  }
+    loadRight: function (currentElement) {
+      console.log(currentElement);
 
-});
+      this.transitionToRoute('works.work', currentElement.get('id'));
+    }
+
+  }});

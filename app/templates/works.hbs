@@ -21,16 +21,6 @@
     </section>
 
     <div class="right">
-  {{#liquid-with model as currentModel}}
-      <div class="workImage">
-          <img class="image" src={{firstElement.image}}>
-      </div>
-      <div class="workContent">
-          <h2>MINIBOOK <span class="year">{{firstElement.year}}</span></h2>
-
-          <p>{{firstElement.description}}</p>
-      </div>
-
-  {{/liquid-with}}
+{{outlet}}
     </div>
 </div>
