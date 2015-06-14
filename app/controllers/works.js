@@ -13,7 +13,6 @@ export default Ember.Controller.extend({
 
   actions: {
     loadRight: function (model) {
-      console.log(model);
       this.transitionToRoute('works.work', model);
     }
 

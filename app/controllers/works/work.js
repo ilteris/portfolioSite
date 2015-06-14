@@ -9,5 +9,14 @@ export default Ember.Controller.extend({
     //and by default return the first object
     console.log(this.get('model'));
     return this.get('model.firstObject');
-  }.property('model.[]')
+  }.property('model.[]'),
+
+  actions: {
+    loadRight: function (model) {
+      console.log(model);
+      this.transitionToRoute('works.work', "detail");
+    }
+  }
+
+
 });

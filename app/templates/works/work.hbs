@@ -1,6 +1,6 @@
 {{#liquid-with model as currentModel use="crossFade"}}
 <div class="workContent">
-  <div class="workImage">
+  <div {{action "loadRight" currentModel}} class="workImage">
       <img class="image" src={{currentModel.image}}>
   </div>
   <div class="title">
