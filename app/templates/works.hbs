@@ -23,14 +23,14 @@
 
 
     <div class="right">
-  {{#liquid-with model as currentModel}}
+      {{#liquid-with model as currentModel}}
       <div class="workImage">
-          <img class="image" src={{firstElement.image}}>
+          <img class="image" src={{currentElement.image}}>
       </div>
       <div class="workContent">
-          <h2>MINIBOOK <span class="year">{{firstElement.year}}</span></h2>
+          <h2> <span class="year">{{currentElement.year}}</span></h2>
 
-          <p>{{firstElement.description}}</p>
+          <p>{{currentElement.description}}</p>
       </div>
 
   {{/liquid-with}}
