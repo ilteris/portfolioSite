@@ -16,6 +16,7 @@ export default Ember.Controller.extend({
     loadRight: function (selection) {
       console.log(selection);
       this.set('selectedElement', selection);
+      this.transitionToRoute('works', selection);
       return false; // or something transition logic
     }
   }
